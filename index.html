@@ -1,0 +1,46 @@
+<html>
+   <!---Matt Fay 12-21-2024  -->
+<header>
+<title>
+40kStats
+</title>
+<nav>
+    <h2>
+        Navigation:<br></h2>
+        <a href="./index.html">Home</a><br>
+        <a href="./page2.html">Demons</a><br>
+        <a href="./page3.html">Space Marines</a><br>
+        <a href="./page4.html">Allies</a><br>
+    
+</nav>
+</header>
+
+
+
+<body style="text-align: center;">
+    <h2>40k Shooting Dice</h2>
+    <input id="BSkill" type="number" min="1" value="4"></input>
+    <label for="BSkill">Ballistic Skill</label><br>
+    <label for="numShots">Number Of Shots</label><br>
+    <input id="numShots" type="number" min="1" value="10"></input>
+    <button id="firstRoll" onclick="rollToHit()">To Hit</button><br><br>
+     <p id="yourHits"></p>
+
+     <h2>Wounding Dice</h2>
+    <input id="Strength" type="number" min="1" value="4"></input>
+    <label for="Strength">Weapon Strength</label>
+    <input id="Toughness" type="number" min="1" value="4"></input>
+    <label for="Toughness">Toughness</label>
+
+    <button id="rollToWound" onclick="rollToWound()">To Wound</button><br>
+    <p id="yourWounds"></p>
+
+
+</body>
+
+<footer>
+mattFay<br>
+</footer>
+<script src="code.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</html>
